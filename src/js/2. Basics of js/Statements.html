@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Statements</h2>
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer </p>
+
+    <p>JavaScript statements are separated by semicolons.</p>
+
+    <p id="demo"></p>
+    <br>
+
+    <script>
+        let x, y, z;
+        x = 5;
+        y = 11;
+        z = x + y;
+
+        document.getElementById('demo').innerHTML = 'The value of z is ' + z + '.';
+    </script>
+
+
+    <p>In HTML, JavaScript statements are executed by the browser.</p>
+
+    <p>Multiple statements on one line are allowed.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        document.getElementById('demo1').innerHTML = 'Hello Haidar';
+    </script>
+
+
+    <p id="demo2"></p>
+    <br>
+
+    <script>
+        let a, b, c;
+        a = 2; b = 12; c = a + b;
+        document.getElementById('demo2').innerHTML = c;
+    </script>
+
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById('demo3').innerHTML = 'Hello Haidar';
+            document.getElementById('demo4').innerHTML = 'How are you?';
+        }
+    </script>
+
+</body>
+
+</html>
