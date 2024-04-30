@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Learning JS
+    </title>
+
+    <script>
+        function myFunction() {
+            document.getElementById('demo').innerHTML = 'Paragraph Changed in the Head'
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>JavaScript in Head, Body, and External</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById('demo').innerHTML = 'My first JavaScript'
+    </script>
+
+    <button type="button" onclick="myFunction()">Try it!</button>
+
+    <button type="button" onclick="myFunction1()">Try it!</button>
+
+    <script>
+        function myFunction1() {
+            document.getElementById('demo').innerHTML = 'Paragraph Changed in the Body'
+        }
+    </script>
+
+    <button type="button" onclick="myFunction2()">Try it!</button>
+
+    <script src="myScript.js"></script>
+
+</body>
+
+</html>
