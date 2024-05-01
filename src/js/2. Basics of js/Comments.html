@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+
+<body>
+
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+    <p id="demo"></p>
+
+    <script>
+        /*This code below will change
+        the heading with id  = "myH"
+        and the paragraph with id = "myP"
+        */
+        
+        //Change Heading:
+        document.getElementById('myH').innerHTML = 'JavaScript Comments';
+
+        //Change Paragraph:
+        document.getElementById('myP').innerHTML = 'My first Paragraph';
+
+        let x = 5;          //Declare x, give it the value of 5
+        let y = x + 3;      //Declare y, give it the value of x+3
+
+        //Write y to demo:
+        document.getElementById('demo').innerHTML = y;
+
+    </script>
+
+</body>
+
+</html>

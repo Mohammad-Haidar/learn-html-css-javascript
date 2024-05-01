@@ -9,7 +9,7 @@
 
 <body>
 
-    <h3>JS Numbers, Strings, Variables, Operators</h3>
+    <h3>JS Numbers, Strings, Variables, Operators, Expressions</h3>
 
     <p>Number can be written with or without decimal places</p>
 
@@ -62,6 +62,7 @@
     <p>In JavaScript the = operator is used to assign values to variables.</p>
 
     <p id="demo7"></p>
+    <br>
 
     <script>
         let a, b;
@@ -71,6 +72,46 @@
     </script>
 
 
+    <p>Expressions compute to values.</p>
+
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <br>
+
+    <script>
+        document.getElementById('demo8').innerHTML = 10 * 10;
+        let h;
+        h = 12;
+        document.getElementById('demo9').innerHTML = h * 5;
+        document.getElementById('demo10').innerHTML = 'Mohammad' + ' ' + 'Haidar';
+    </script>
+
+
+    <h4>The <b>let</b> Keyword creates Variables</h4>
+
+    <p id="demo11"></p>
+    <br>
+
+    <script>
+        let e, f;
+        e = 7 + 5;
+        f = e * 10;
+        document.getElementById('demo11').innerHTML = f;
+    </script>
+
+
+    <h4>The <b>var</b> Keyword also creates Variables</h4>
+
+    <p id="demo12"></p>
+
+    <script>
+        var g, i;
+        g = 5 * 5;
+        i = g * 5;
+        document.getElementById('demo12').innerHTML = i;
+
+    </script>
 
 </body>
 
