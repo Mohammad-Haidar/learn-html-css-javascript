@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, x, y, and z are undeclared.</p>
+    <p>They are automatically declared when first used.</p>
+
+    <p id="demo"></p>
+    <br>
+
+    <script>
+        x = 3;
+        y = 2;
+        z = x * y;
+        document.getElementById('demo').innerHTML = 'The value of z is: ' + z;
+    </script>
+
+
+    <p>In this example, a, b, and c are variables.</p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <br>
+
+    <script>
+        var a = 15;
+        var b = 12;
+        var c = a - b;
+        document.getElementById('demo2').innerHTML = 'The value of c is: ' + c;
+
+        let d = 5;
+        let e = 7;
+        let f = d + e;
+        document.getElementById('demo3').innerHTML = 'The value of f is: ' + f;
+
+        const h = 12;
+        const i = 13;
+        const j = h + i;
+        document.getElementById('demo4').innerHTML = 'The value of j is : ' + j;
+
+        var k = 50;
+        var l = 25;
+        let m = k - l;
+        document.getElementById('demo5').innerHTML = 'The value of m is : ' + m;
+
+        let carName = "BMW";
+        document.getElementById('demo6').innerHTML = carName;
+    </script>
+
+
+    <p>You can declare many variables in one statement.</p>
+    <p id="demo7"></p>
+
+    <script>
+        let person = "John Doe", car = "Volvo", price = 200;
+        document.getElementById('demo7').innerHTML = car;
+    </script>
+
+</body>
+
+</html>
