@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Arithmetic Operations</h2>
+    <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <br>
+
+    <script>
+        let a = 150;
+        let b = 50;
+        let x = a + b;
+        document.getElementById("demo").innerHTML = x;
+
+        let y = 3;
+        let z = (100 + 50) * y;
+        document.getElementById("demo2").innerHTML = z;
+    </script>
+
+
+    <h2>The + Operator</h2>
+
+    <p id="demo3"></p>
+    <br>
+
+    <script>
+        let e = 7;
+        let f = 6;
+        let g = e + f;
+        document.getElementById("demo3").innerHTML = g;
+    </script>
+
+
+    <h2>The - Operator</h2>
+
+    <p id="demo4"></p>
+    <br>
+
+    <script>
+        let h = 5;
+        let i = 2;
+        let j = h - i;
+        document.getElementById("demo4").innerHTML = j;
+    </script>
+
+
+    <h2>The * Operator</h2>
+
+    <p id="demo5"></p>
+    <br>
+
+    <script>
+        let k = 22;
+        let l = 2;
+        let m = k * l;
+        document.getElementById("demo5").innerHTML = m;
+    </script>
+
+
+    <h2>The / Operator</h2>
+
+    <p id="demo6"></p>
+    <br>
+
+    <script>
+        let n = 5;
+        let o = 2;
+        let p = n / o;
+        document.getElementById("demo6").innerHTML = p;
+    </script>
+
+
+    <h2>The % Operator</h2>
+
+    <p id="demo7"></p>
+    <br>
+
+    <script>
+        let q = 12;
+        let r = 5;
+        let s = q % r;
+        document.getElementById("demo7").innerHTML = s;
+    </script>
+
+
+    <h2>The ++ Operator</h2>
+
+    <p id="demo8"></p>
+    <br>
+
+    <script>
+        let t = 3;
+        t++;
+        let u = t;
+        document.getElementById("demo8").innerHTML = u;
+    </script>
+
+
+    <h2>The -- Operator</h2>
+
+    <p id="demo9"></p>
+    <br>
+
+    <script>
+        let v = 2;
+        v--;
+        let w = v;
+        document.getElementById("demo9").innerHTML = w;
+    </script>
+
+
+    <h2>The ** Operator</h2>
+
+    <p id="demo10"></p>
+    <br>
+
+    <script>
+        let ab = 6;
+        document.getElementById("demo10").innerHTML = ab ** 2;
+    </script>
+
+
+    <h2>Operator Precedence</h2>
+    <p>Multiplication has precedence over addition.</p>
+    <p>But parenthesis has precedence over multiplication.</p>
+
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <br>
+
+    <script>
+        document.getElementById("demo11").innerHTML = 100 + 50 * 3;
+        document.getElementById("demo12").innerHTML = (100 + 50) * 3;
+    </script>
+
+
+    <h2>Operator Precedence</h2>
+    <p>When many operations has the same precedence, they are computed from left to right.</p>
+
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script>
+        document.getElementById("demo13").innerHTML = 100 + 50 - 3;
+        document.getElementById("demo14").innerHTML = 100 / 50 * 3;
+    </script>
+
+</body>
+
+</html>
