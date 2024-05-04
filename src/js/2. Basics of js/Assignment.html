@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Assignments</h1>
+    <h3>The = Operator</h3>
+
+    <p id="demo1"></p>
+    <br>
+
+    <script>
+        let y = 50
+        let x = 10 + y;
+        document.getElementById("demo1").innerHTML = "Value of x is: " + x;
+    </script>
+
+
+    <h3>The += Operator</h3>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <br>
+
+    <script>
+        let z = 10;
+        z += 5;
+        document.getElementById("demo2").innerHTML = "Value of z is: " + z;
+        let text = "Hello";
+        text += " World";
+        document.getElementById("demo3").innerHTML = text;
+    </script>
+
+
+    <h3>The -= Operator</h3>
+
+    <p id="demo4"></p>
+    <br>
+
+    <script>
+        let a = 10;
+        a -= 5;
+        document.getElementById("demo4").innerHTML = "Value of a is: " + a;
+    </script>
+
+
+    <h3>The *= Operator</h3>
+
+    <p id="demo5"></p>
+    <br>
+
+    <script>
+        let b = 10;
+        b *= 5;
+        document.getElementById("demo5").innerHTML = "Value of b is: " + b;
+    </script>
+
+
+    <h3>The **= Operator</h3>
+
+    <p id="demo6"></p>
+    <br>
+
+    <script>
+        let c = 10;
+        c **= 5;
+        document.getElementById("demo6").innerHTML = "Value of c is: " + c;
+    </script>
+
+
+    <h3>The /= Operator</h3>
+
+    <p id="demo7"></p>
+    <br>
+
+    <script>
+        let d = 10;
+        d /= 5;
+        document.getElementById("demo7").innerHTML = d;
+    </script>
+
+
+    <h3>The %= Operator</h3>
+
+    <p id="demo8"></p>
+    <br>
+
+    <script>
+        let e = 10;
+        e %= 6;
+        document.getElementById("demo8").innerHTML = "Value of e is: " + e;
+    </script>
+
+
+    <h3>The <<= Operator</h3>
+    <p id="demo9"></p>
+    <br>
+
+    <script>
+    let f = -100;
+    f <<= 5;
+    document.getElementById("demo9").innerHTML = "Value of f is: " + f;
+    </script>
+
+
+    <h3>The >>= Operator</h3>
+
+    <p id="demo10"></p>
+    <br>
+    
+    <script>
+    let g = -100;
+    g >>= 5;
+    document.getElementById("demo10").innerHTML = "Value of g is: " + g;
+    </script>
+
+
+    <h3>The >>>= Operator</h3>
+
+    <p id="demo11"></p>
+    <br>
+    
+    <script>
+    let h = -100;
+    h >>>= 5;
+    document.getElementById("demo11").innerHTML = "Value of h is: " + h;
+    </script>
+
+
+
+    <h3>The &= Operator</h3>
+
+    <p id="demo12"></p>
+    <br>
+    
+    <script>
+    let i = 100;
+    i &= 5;
+    document.getElementById("demo12").innerHTML = "Value of i is: " + i;
+    </script>
+
+
+    <h3>The |= Operator</h3>
+
+    <p id="demo13"></p>
+    <br>
+    
+    <script>
+    let j = 100;
+    j |= 5;
+    document.getElementById("demo13").innerHTML = "Value of j is: " + j;
+    </script>
+
+
+    <h3>The ^= Operator</h3>
+
+    <p id="demo14"></p>
+    <br>
+    
+    <script>
+    let k = 100;
+    k ^= 5;
+    document.getElementById("demo14").innerHTML = "Value of k is: " + k;
+    </script>
+
+
+    <h3>The &&= Operator</h3>
+    <p>If the first value is true, the second value is assigned.</p>
+    
+    <p id="demo15"></p>
+    <br>
+    
+    <script>
+    let l = 100;
+    l &&= 5;
+    document.getElementById("demo15").innerHTML = "Value of l is: " + l;
+    </script>
+
+
+    <h3>The ||= Operator</h3>
+
+    <p>If the first value is false, the second value is assigned:</p>
+    <p id="demo16"></p>
+    <br>
+    
+    <script>
+    let m = undefined;
+    m ||= 5;
+    document.getElementById("demo16").innerHTML = "Value of m is: " + m;
+    </script>
+
+
+    <h2>The ??= Operator</h2>
+    <p>The ??= operator is used between two values. If the first value is undefined or null, the second value is assigned.</p>
+    
+    <p id="demo17"></p>
+    
+    <script>
+    let n;
+    document.getElementById("demo17").innerHTML = n ??= 5; 
+    </script>
+
+</body>
+
+</html>
