@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learninng JS</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Data Types</h2>
+
+    <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+    <p id="demo"></p>
+    <br>
+
+    <script>
+        let x = 16 + "Volvo";
+        document.getElementById("demo").innerHTML = x;
+    </script>
+
+
+    <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <br>
+
+    <script>
+        let y = 16 + 4 + "Volvo";
+        document.getElementById("demo2").innerHTML = y;
+
+        let z = "Volvo" + 16 + 4;
+        document.getElementById("demo3").innerHTML = z;
+    </script>
+
+
+    <p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+    <p id="demo4"></p>
+    <br>
+
+    <script>
+        let a;         // Now x is undefined
+        a = 5;         // Now x is a Number
+        a = "Mohammad";    // Now x is a String
+
+        document.getElementById("demo4").innerHTML = a;
+    </script>
+
+
+    <p>Strings are written with quotes. You can use single or double quotes:</p>
+
+    <p id="demo5"></p>
+    <br>
+
+    <script>
+        let carName1 = "Lamborghini";
+        let carName2 = 'Lamborghini';
+
+        document.getElementById("demo5").innerHTML =
+            carName1 + "<br>" +
+            carName2; 
+    </script>
+
+
+    <p>You can use quotes inside the string, as long as they don't match the quotes surrounding the string</p>
+
+    <p id="demo6"></p>
+    <br>
+
+    <script>
+        let answer1 = "It's alright";
+        let answer2 = "He is called 'Haidar'";
+        let answer3 = 'He is called "Haidar"';
+        document.getElementById("demo6").innerHTML =
+            answer1 + "<br>" +
+            answer2 + "<br>" +
+            answer3;
+    </script>
+
+
+    <p>Numbers can be written with, or without decimals:</p>
+
+    <p id="demo7"></p>
+    <br>
+
+    <script>
+        let x1 = 34.00;
+        let x2 = 34;
+        let x3 = 3.14;
+
+        document.getElementById("demo7").innerHTML =
+            x1 + "<br>" + x2 + "<br>" + x3;
+    </script>
+
+
+    <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+    <p id="demo8"></p>
+    <br>
+
+    <script>
+        let b = 123e5;
+        let c = 123e-5;
+
+        document.getElementById("demo8").innerHTML =
+            b + "<br>" + c;
+    </script>
+
+
+    <p>A BigInt can not have decimals.</p>
+
+    <p id="demo9"></p>
+
+    <p>You cannot perform math between a BigInt type and a Number type.</p>
+    <br>
+
+    <script>
+        let d = BigInt("123456789012345678901234567890");
+        document.getElementById("demo9").innerHTML = d; 
+    </script>
+
+
+    <p>Booleans can have two values; true or false</p>
+
+    <p id="demo10"></p>
+    <br>
+
+    <script>
+        let e = 5;
+        let f = 5;
+        let g = 6;
+        document.getElementById("demo10").innerHTML =
+            (e == f) + "<br>" + (e == g);
+    </script>
+
+
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+    <p id="demo11"></p>
+    <br>
+
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        document.getElementById("demo11").innerHTML = cars[0];
+    </script>
+
+
+    <p id="demo12"></p>
+    <br>
+
+    <script>
+        const person = {
+            firstName: "Mohammad",
+            lastName: "Haidar",
+            age: 23,
+            eyeColor: "brown"
+        };
+
+        document.getElementById("demo12").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
+
+
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+
+    <p id="demo13"></p>
+    <br>
+
+    <script>
+        document.getElementById("demo13").innerHTML =
+            typeof "" + "<br>" +
+            typeof "Mohammad" + "<br>" +
+            typeof "Mohammad Haidar" + "<br>" +
+            typeof 0 + "<br>" +
+            typeof 314 + "<br>" +
+            typeof 3.14 + "<br>" +
+            typeof (3) + "<br>" +
+            typeof (3 + 4);
+    </script>
+
+
+    <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+    <p id="demo14"></p>
+    <br>
+
+    <script>
+        let car;
+        document.getElementById("demo14").innerHTML =
+            car + "<br>" + typeof car;
+    </script>
+
+
+    <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+
+    <p id="demo15"></p>
+    <br>
+
+    <script>
+        let carBrand = "Rezvani";
+        carBrand = undefined;
+
+        document.getElementById("demo15").innerHTML = carBrand + "<br>" + typeof carBrand;
+    </script>
+
+
+    <p>An empty string has both a legal value and a type:</p>
+
+    <p id="demo16"></p>
+
+    <script>
+        let bike = "";
+        document.getElementById("demo16").innerHTML =
+            "The value is: " +
+            bike + "<br>" +
+            "The type is: " + typeof bike;
+    </script>
+
+</body>
+
+</html>
